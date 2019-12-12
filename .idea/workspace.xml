@@ -4,6 +4,7 @@
     <list default="true" id="42b32bf7-139a-4858-b5b0-7b24049792c0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.scss" afterDir="false" />
@@ -85,7 +86,7 @@
       <workItem from="1575665796721" duration="68000" />
       <workItem from="1575665918358" duration="11268000" />
       <workItem from="1575926203026" duration="8394000" />
-      <workItem from="1576011877131" duration="7165000" />
+      <workItem from="1576011877131" duration="13226000" />
     </task>
     <servers />
   </component>

@@ -12,16 +12,26 @@
   <div class="container m-0 max-w-full sm:mx-auto" style="margin-bottom: -56px;">
 
     <!--Navbar e header da página-->
-    <header class="bg-purple-800 text-white p-3 borda-bottom-radius-30 overflow-hidden sm:px-12">
-      <nav class="flex items-center justify-between">
+    <header class="bg-purple-800 text-white p-3 borda-bottom-radius-30 overflow-hidden sm:px-8">
+      <nav class="flex items-center justify-between relative">
         <h3 class="text-3xl font-normal">VRAS</h3>
 
-        <ul class="hidden sm:flex justify-around w-2/5">
-          <li><a href="">Sobre</a></li>
-          <li><a href="">Serviços</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Contato</a></li>
+        <ul class="hidden sm:flex sm:text-sm md:text-md">
+          <li class="mr-4 md:mr-8">
+            <a href="" class="p-2 link-hover">Serviços</a>
+          </li>
+          <li class="mr-4 md:mr-8">
+            <a href="" class="p-2 link-hover">Sobre</a>
+          </li>
+          <li class="mr-4 md:mr-8">
+            <a href="" class="p-2 link-hover">Portfolio</a>
+          </li>
+          <li class="mr-4 md:mr-8">
+            <a href="" class="p-2 link-hover">Blog</a>
+          </li>
+          <li>
+            <a href="" class="p-2 link-hover">Contato</a>
+          </li>
         </ul>
         <!--Redes sociais e menu sand-->
         <ul class="flex">
@@ -35,13 +45,19 @@
             <a href="#" class="p-3">i</a>
           </li>
           <li class="sm:hidden w-8 h-8 mr-2 rounded-full border-solid border border-white flex items-center justify-center">
-            <a href="#" class="p-3">
-              <figure class="w-4">
-                <img src="./images/menu_1.png" alt="menu">
-              </figure>
-            </a>
+            <button class="w-8 h-8 text-center p-2 focus:outline-none rounded-full" onclick="abrirHamb()">
+                <img src="./images/menu_1.png" alt="menu" class="">
+            </button>
           </li>
         </ul>
+
+        <div class="sm:hidden w-32 absolute bg-white text-gray-700 hamb-links rounded-lg" id="hamb-links">
+          <a class="pl-4 py-1 block hover:bg-purple-200" href="#">Sobre</a>
+          <a class="pl-4 py-1 block hover:bg-purple-200" href="#">Serviços</a>
+          <a class="pl-4 py-1 block hover:bg-purple-200" href="#">Portfolio</a>
+          <a class="pl-4 py-1 block hover:bg-purple-200" href="#">Blog</a>
+          <a class="pl-4 py-1 block hover:bg-purple-200" href="#">Contato</a>
+        </div>
       </nav>
 
       <!--Cta para sobre e curriculo-->

@@ -8,6 +8,33 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.hamb-links {
+  right: .25em;
+  top: 3em;
+  z-index: 100000;
+  height: 0;
+  overflow-x: hidden;
+  transition: height .3s ease-in-out, transform .2s ease-in-out .1s;
+  transform: scale(.2) translate(200px, 0);
+}
+
+.hamb-links::-webkit-scrollbar {
+  display: none;
+}
+
+.hamb-ativo {
+  transform: scale(1) translate(0,0);
+  padding: 0.5rem 0 0.5rem 0;
+  height: 176px;
+}
+.link-hover {
+  transition: border .1s ease-in;
+}
+
+.link-hover:hover {
+  border-bottom: 2px solid white;
+}
+
 .borda-bottom-radius-30 {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -65,11 +92,13 @@ h6, h5 {
   top: -28px;
 }
 
+
+// Quadrados com pontos
 .quadrado-pont {
   width: 160px;
   height: 160px;
-  background-image: radial-gradient(#fafafa 15%, transparent 0);
-  background-position: 0 0, 50px 50px;
+  background-image: radial-gradient(#fafafa 20%, transparent 0);
+  background-position: 0 0;
   background-size: 20px 20px;
   position: absolute;
   left: 35%;
@@ -78,7 +107,7 @@ h6, h5 {
 
 .quadrado-pont2 {
   @extend .quadrado-pont;
-  background-image: radial-gradient(#393939 15%, transparent 0);
+  background-image: radial-gradient(#393939 20%, transparent 0);
   left: 85%;
   top: 160px;
   z-index: -1;
@@ -86,14 +115,14 @@ h6, h5 {
 
 .quadrado-pont3 {
   @extend .quadrado-pont;
-  background-image: radial-gradient(#393939 15%, transparent 0);
+  background-image: radial-gradient(#393939 20%, transparent 0);
   top: 12%;
   left: 25%;
 }
 
 .quadrado-pont4 {
   @extend .quadrado-pont;
-  background-image: radial-gradient(#393939 15%, transparent 0);
+  background-image: radial-gradient(#393939 20%, transparent 0);
   top: 2%;
   left: 90%;
   z-index: -1;
@@ -101,7 +130,7 @@ h6, h5 {
 
 .quadrado-pont5 {
   @extend .quadrado-pont;
-  background-image: radial-gradient(#393939 15%, transparent 0);
+  background-image: radial-gradient(#393939 20%, transparent 0);
   left: 65%;
   top: -12%;
   z-index: 0;
